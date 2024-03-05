@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My_Portfolio_Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+    <div class="header" id="headerId">
+        <div class="container">
+            <nav>
+                <img src="logo.jpg" alt="" width="65px" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi,I'm <span>Pranjay Kumar </span><br/> From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------About--------------------------------------- -->
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Pranjay.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Hey there! I'm Pranjay Kumar, a passionate frontend developer with 1.5 years of hands-on experience in crafting immersive digital experiences that captivate and engage users. Within these virtual walls, you'll find a curated collection of my proudest creations, each a testament to my dedication to pixel-perfection and user-centric design.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div> 
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br/>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br/>Web App Development</li>
+                            <li><span>App Development</span><br/>Bulding Andriod/iOSs App</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UI/Frontend Developer</span><br/>At PiLog India,Hyderbad.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br/>Full stack web development from Naresh IT Hyderabad</li>
+                            <li><span>2016-2021</span><br/>BCA From MMHA&P University,Patna.</li>
+                            <li><span>2019-2021</span><br/>MCA From KK University,Nalanda(Bihar).</li>
+                        </ul>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ----------------------------------------services----------------------------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                         Animi ex cum mollitia minima cumque ipsa autem earum alias vel impedit assumenda explicabo repellendus nihil non ad totam nostrum,
+                         laboriosam quia!
+                    </p>
+                    <a href="#">Learn more...</a>
+                </div>
+                <div>
+                    <i class="fa fa-crop" aria-hidden="true"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                         Animi ex cum mollitia minima cumque ipsa autem earum alias vel impedit assumenda explicabo repellendus nihil non ad totam nostrum,
+                         laboriosam quia!
+                    </p>
+                    <a href="#">Learn more...</a>
+                </div>
+                <div>
+                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                         Animi ex cum mollitia minima cumque ipsa autem earum alias vel impedit assumenda explicabo repellendus nihil non ad totam nostrum,
+                         laboriosam quia!
+                    </p>
+                    <a href="#">Learn more...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ---------------------------------------Portfolio----------------------------------------------------- -->
+
+    <div id="portfoli">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Web App Design</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Iste dolorum nobis in sit! Cum quod molestias.</p>
+                        <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.webp" alt="">
+                    <div class="layer">
+                        <h3>Website And Mobile App</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Iste dolorum nobis in sit! Cum quod molestias.</p>
+                        <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.avif" alt="">
+                    <div class="layer">
+                        <h3>UI/UX Desigining</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Iste dolorum nobis in sit! Cum quod molestias.</p>
+                        <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- --------------------------------------Contact------------------------------------ -->
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact me</h1>
+                        <p><i class="fas fa-paper-plane"></i>pranjaykumar200@gmail.com</p>
+                        <p><i class="fas fa-paper-call"></i>91+ 7488266769</p>
+                        <div class="social-icon">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        <a href="resume.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="your name" required>
+                            <input type="email" name="email" placeholder="your email" required>
+                            <textarea name="message" placeholder="your message" rows="6"></textarea>
+                            <button class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>copyright &copy; pranjay[PRK] made by <i class="fas fa-heart"></i>pranjay kumar</p>
+            </div>
+        </div>
+    <script src="app.js"></script>
+</body>
+</html>
